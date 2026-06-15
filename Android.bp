@@ -6,11 +6,11 @@ android_app_import {
 	name: "bcr",
 	owner: "chenxiaolong",
 	apk: "prebuilts/product/priv-app/bcr/bcr.apk",
-	preprocessed: true,
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
+	certificate: "platform",
 	privileged: true,
 	product_specific: true,
+    optional_uses_libs: [
+        "androidx.window.extensions",
+        "androidx.window.sidecar",
+    ],
 }
